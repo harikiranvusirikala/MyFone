@@ -4,7 +4,6 @@
 </h1>
 
 <!-- Header -->
-
 <p align="center">
   <b>MyFone is a react native application for recharging, changing plans and providing feedbacks to the mobile phone service provider. The application provides option for you to register your mobile number, change the existing plan and provide feedback under various categories.</b>
   <br />
@@ -21,8 +20,17 @@
 
 <!-- Body -->
 ```sh
-npx react-native start
+npm start
 ```
+
+## Sections
+
+- [Prerequisites](#prerequisites)
+- [Base dependencies](#base-dependencies)
+- [Features](#features)
+- [Usage](#usage)
+- [Folder structure](#folder-structure)
+- [App flow](#app-flow)
 
 ## Prerequisites
 
@@ -32,6 +40,7 @@ npx react-native start
 - [Cocoapods 1.10.1](https://cocoapods.org)
 - [JDK > 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Android Studio and Android SDK](https://developer.android.com/studio)
+- [Expo](https://docs.expo.dev/develop/development-builds/installation/)
 
 ## Base dependencies
 
@@ -93,3 +102,29 @@ This template follows a very simple project structure:
   - `theme`: Folder to store all the styling concerns related to the application theme.
   - `App.js`: Main component that starts your whole app.
   - `index.js`: Entry point of your application as per React-Native standards.
+
+## App flow
+
+1. <b>Splash screen</b>: This screen will be displayed when the application is loading.
+<img width="175" alt="Splash" src="https://user-images.githubusercontent.com/25457325/236615306-797f69b7-7319-48c4-8db8-02f359de53f2.png" />
+
+2. <b>Signup screen</b>: User can register with their phone number, enter preferred pin and confirm the pin. This screen will be shown only when the user using the application for the first time. Once registered, for subsequent logins only login screen will be displayed.
+<img width="175" alt="Sign Up" src="https://user-images.githubusercontent.com/25457325/236615787-51632e15-f30f-478f-b829-bb23bc9d17e9.png" />
+
+3. <b>Login screen</b>: This screen displays the text input for user to enter the pin number. Once entered, if the entry is correct user will be navigated to home screen. Else will remain in the same screen.
+<img width="175" alt="Login" src="https://user-images.githubusercontent.com/25457325/236615819-4e9a7a7c-f359-4bba-96c2-e99f496c9fe2.png" />
+
+4. <b>Home scree</b>n: This screen shows the user details such as phone number, existing plan, remaining data, bill amount, due date of paying bill etc.
+<img width="175" alt="Home" src="https://user-images.githubusercontent.com/25457325/236615829-b5742f88-2413-4bcf-b25a-9dab4dc26383.png" />
+
+5. <b>Change Plan screen</b>: This screen allows user to change their existing plan to a new one. User can click confirm plan button to switch to a new plan. Once clicked appropriate message will be displayed.
+<img width="175" alt="Change Plan" src="https://user-images.githubusercontent.com/25457325/236615852-217e5026-c989-4274-ab06-759357612ae1.png" />
+<img width="175" alt="Change Plan Submit" src="https://user-images.githubusercontent.com/25457325/236615855-e1b2ab4a-5766-411c-93ec-fa87a985affc.png" />
+
+6. <b>Contact Us screen</b>: This screen allows user to provide feedback and complaint under various categories. Categories include Feedback, Internet access, Value added services, Port number, Roaming, General.
+<img width="175" alt="Contact Us" src="https://user-images.githubusercontent.com/25457325/236615871-63facbf7-4d55-4d79-bbe8-21a45e02b219.png" />
+<img width="175" alt="Contact Us Issue Picker" src="https://user-images.githubusercontent.com/25457325/236615881-e469ab66-5b4f-45ef-ba6c-d6b8b67c4276.png" />
+
+Once submitted successfully an alert message should be displayed stating 'Issue submitted successfully' as shown below.
+<img width="175" alt="Contact Us Submit" src="https://user-images.githubusercontent.com/25457325/236615887-85d3573b-5cf0-4ed3-95f8-e95d6df8d850.png" />
+
