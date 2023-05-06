@@ -1,0 +1,25 @@
+{
+	"plans": [
+		{
+      "id": 1,
+      "plan": 399,
+      "validity": 84,
+      "talktime": "Unlimited",
+      "data": 1,
+    },
+    {
+      "id": 2,
+      "plan": 450,
+      "validity": 100,
+      "talktime": "Unlimited",
+      "data": 1,
+    },
+    {
+      "id": 3,
+      "plan": 500,
+      "validity": 84,
+      "talktime": "Unlimited",
+      "data": 1.5,
+    }
+	]
+}
