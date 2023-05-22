@@ -55,6 +55,7 @@ npm start
 <img width="175" alt="Contact Us Issue Picker" src="https://user-images.githubusercontent.com/25457325/236615881-e469ab66-5b4f-45ef-ba6c-d6b8b67c4276.png" />
 
 Once submitted successfully an alert message should be displayed stating 'Issue submitted successfully' as shown below.
+
 <img width="175" alt="Contact Us Submit" src="https://user-images.githubusercontent.com/25457325/236615887-85d3573b-5cf0-4ed3-95f8-e95d6df8d850.png" />
 
 ## Prerequisites
